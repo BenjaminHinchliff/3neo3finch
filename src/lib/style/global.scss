@@ -1,12 +1,14 @@
+@use './palette.scss';
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: palette.$bg-light;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121212;
+        background-color: palette.$bg-dark;
     }
 }
 
@@ -19,7 +21,7 @@ p, button {
 
 @media (prefers-color-scheme: dark) {
     h1, h2, p {
-        color: #e2e2e2;
+        color: palette.$text-light;
     }
 }
 

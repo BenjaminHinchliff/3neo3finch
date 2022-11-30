@@ -2,10 +2,12 @@
 	<h1 id="name">Benjamin Hinchliff</h1>
 </div>
 
-<style>
+<style type="scss">
+	@use '../style/palette.scss';
+
 	.header {
 		position: relative;
-		background-color: #f97316;
+		background-color: palette.$primary-light;
 		border-radius: 0.25rem;
 		z-index: -1000;
 	}
@@ -35,7 +37,7 @@
 
 	@media (prefers-color-scheme: dark) {
 		.header {
-			background-color: #bf5200;
+			background-color: palette.$primary-dark;
 		}
 
 		.header::before {
@@ -43,7 +45,7 @@
 		}
 
 		#name {
-			color: #ffffff;
+			color: white;
 		}
 	}
 </style>

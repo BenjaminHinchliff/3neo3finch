@@ -1,16 +1,23 @@
 <script lang="ts">
 	import Repo from './Repo.svelte';
 	import type { Repos } from '$lib/types/repos';
-	import { createEventDispatcher } from 'svelte';
+	import { afterUpdate, createEventDispatcher } from 'svelte';
+	import Loader from './Loader.svelte';
 
 	const dispatch = createEventDispatcher();
 
 	export let repos: Repos;
 	export let has_more: boolean;
 
+	let loading = false;
+
 	function load_more() {
+		loading = true;
 		dispatch('loadmore');
 	}
+
+	// set loading to false when repos is updated
+	$: loading = repos && false;
 </script>
 
 <div class="repo-list">
@@ -19,7 +26,9 @@
 			<Repo {html_url} {name} {description} />
 		{/each}
 	</div>
-	{#if has_more}
+	{#if loading}
+		<Loader />
+	{:else if has_more}
 		<button class="more-button jsonly" on:click={load_more}>Load More</button>
 	{:else}
 		<p class="end-marker">no more repositories :(</p>
