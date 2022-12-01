@@ -24,7 +24,7 @@
 	}
 
 	nav a {
-		color: #cdcdcd;
+		color: #505050;
 		font-size: 1.25rem;
 		text-decoration: none;
 		display: inline-block;
@@ -32,7 +32,17 @@
 		transition: color 0.15s ease-in-out 0s;
 
 		&:hover {
-			color: #ffffff;
+			color: #000000;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		nav a {
+			color: #cdcdcd;
+
+			&:hover {
+				color: #ffffff;
+			}
 		}
 	}
 </style>
