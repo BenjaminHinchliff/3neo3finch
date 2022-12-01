@@ -9,6 +9,8 @@
 		position: relative;
 		background-color: palette.$primary-light;
 		border-radius: 0.25rem;
+		border-end-end-radius: 0;
+		border-end-start-radius: 0;
 		z-index: -1000;
 	}
 

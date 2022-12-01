@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Container from '$lib/components/Container.svelte';
-	import Banner from '$lib/components/Banner.svelte';
 	import type { PageData } from './$types';
 	import RepoList from '$lib/components/RepoList.svelte';
 	import Layout from '$lib/components/Layout.svelte';
