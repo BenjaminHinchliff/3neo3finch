@@ -1,9 +1,5 @@
 <script lang="ts">
-	import '$lib/style/global.scss';
-	import Container from '$lib/components/Container.svelte';
-	import Banner from '$lib/components/Banner.svelte';
+	import Layout from '$lib/components/Layout.svelte';
 </script>
 
-<Container>
-	<Banner />
-</Container>
+<Layout />

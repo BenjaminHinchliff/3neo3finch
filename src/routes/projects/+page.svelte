@@ -1,9 +1,9 @@
 <script lang="ts">
-	import '$lib/style/global.scss';
 	import Container from '$lib/components/Container.svelte';
 	import Banner from '$lib/components/Banner.svelte';
 	import type { PageData } from './$types';
 	import RepoList from '$lib/components/RepoList.svelte';
+	import Layout from '$lib/components/Layout.svelte';
 
 	let pages = {
 		num: 1,
@@ -25,7 +25,6 @@
 	export let data: PageData;
 </script>
 
-<Container>
-	<Banner />
+<Layout>
 	<RepoList repos={data.repos} has_more={pages.has_next} on:loadmore={load_more} />
-</Container>
+</Layout>

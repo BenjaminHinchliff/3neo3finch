@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Repo from './Repo.svelte';
 	import type { Repos } from '$lib/types/repos';
-	import { afterUpdate, createEventDispatcher } from 'svelte';
+	import { createEventDispatcher } from 'svelte';
 	import Loader from './Loader.svelte';
 
 	const dispatch = createEventDispatcher();
