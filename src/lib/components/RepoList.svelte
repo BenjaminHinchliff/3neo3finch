@@ -61,8 +61,8 @@
 
 	@media (prefers-color-scheme: dark) {
 		.more-button {
-			background-color: #202020;
-			color: #808080;
+			background-color: #292929;
+			color: #666666;
 		}
 	}
 
