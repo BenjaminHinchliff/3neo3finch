@@ -39,7 +39,7 @@ export const GET: RequestHandler = async ({ params: { page } }) => {
 		},
 		{
 			headers: {
-				'cache-control': 'public, max-age=3600'
+				'cache-control': res.headers['cache-control'] ?? "cache-control': 'public, max-age=3600"
 			}
 		}
 	);
