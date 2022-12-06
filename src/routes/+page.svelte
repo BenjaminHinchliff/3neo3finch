@@ -25,8 +25,8 @@
 	</p>
 	<p>
 		Outside of work, my hobbies include learning about philosiphy and ways of thinking and viewing
-		the world, playing with my cats, hanging out with friends and/or my lovely girlfriend, and
-		fixing and generally learning how things work.
+		the world, playing with my cats, hanging out with friends<!-- and/or my lovely girlfriend (ask her)-->,
+		and fixing and generally learning how things work.
 	</p>
 	<p>
 		I've accumulated a lot of projects and experiments throughtout the years, in various stages of
