@@ -26,6 +26,8 @@
 		}
 	}
 
+	/* doesn't look great at highter widths
+	/* 
 	@media (min-width: 1280px) {
 		.container {
 			max-width: 1280px;
@@ -37,4 +39,5 @@
 			max-width: 1536px;
 		}
 	}
+	*/
 </style>

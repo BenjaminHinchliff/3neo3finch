@@ -5,7 +5,7 @@
 </script>
 
 <Layout>
-	<h1>Hi!</h1>
+	<h1>Hi! 🐟</h1>
 	<p>
 		I'm Benjamin, a programmer. I've been programming for
 		{new Date().getFullYear() - START_YEAR} years now, since early middle school. I'm largely self-taught,
@@ -31,6 +31,6 @@
 	<p>
 		I've accumulated a lot of projects and experiments throughtout the years, in various stages of
 		completion. I plan to prepare a showcase when I have more time, but for now please feel free to
-		look at the projects page for a full list.
+		look at the <a href="/projects">projects page</a> for a full list.
 	</p>
 </Layout>
