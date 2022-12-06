@@ -4,7 +4,7 @@
 	const START_YEAR = 2015;
 </script>
 
-<Layout>
+<Layout title="About">
 	<h1>Hi! 🐟</h1>
 	<p>
 		I'm Benjamin, a programmer. I've been programming for

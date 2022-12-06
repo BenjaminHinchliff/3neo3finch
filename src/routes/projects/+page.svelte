@@ -21,6 +21,6 @@
 	export let data: PageData;
 </script>
 
-<Layout>
+<Layout title="Projects">
 	<RepoList repos={data.repos} has_more={pages.has_next} on:loadmore={load_more} />
 </Layout>
