@@ -9,8 +9,8 @@
 	<p>
 		I'm Benjamin, a programmer. I've been programming for
 		{new Date().getFullYear() - START_YEAR} years now, since early middle school. I'm largely self-taught,
-		and am currently attending California Polytechnic University to improve my skills, and get a fancy
-		certificate so you know I somewhat know what I'm doing.
+		and am currently attending California Polytechnic University to improve my skills.
+		<!-- and get a fancy certificate so you know I somewhat know what I'm doing. -->
 	</p>
 	<p>
 		I've worked professionally doing contract work for Web Development (and yes I've worked a lot
