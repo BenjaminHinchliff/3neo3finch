@@ -9,8 +9,6 @@
 		position: relative;
 		background-color: $primary-700;
 		border-radius: 0.25rem;
-		border-end-end-radius: 0;
-		border-end-start-radius: 0;
 		z-index: -1000;
 	}
 
