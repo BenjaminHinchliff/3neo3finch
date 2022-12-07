@@ -5,7 +5,7 @@
 </script>
 
 <Layout title="About">
-	<h1>Hi! 🐟</h1>
+	<h1>🐡 Hi! 🐡</h1>
 	<p>
 		I'm Benjamin, a programmer. I've been programming for
 		{new Date().getFullYear() - START_YEAR} years now, since early middle school. I'm largely self-taught,

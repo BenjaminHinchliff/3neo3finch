@@ -12,8 +12,10 @@
 </div>
 
 <style lang="scss">
+	@import '../style/global.scss';
+
 	.repo {
-		border-bottom: 1px solid #9ca3af;
+		border-bottom: 1px solid $grey-600;
 		padding: 0.3rem 0.1rem;
 	}
 
@@ -27,15 +29,15 @@
 		border-radius: 0.5rem;
 
 		&:hover {
-			background-color: #d0d0d0;
+			background-color: $grey-50;
 			transition: background-color 0.25s ease 0s;
 		}
 	}
 
-	@media (prefers-color-scheme: dark) {
+	@media only screen and (prefers-color-scheme: dark) {
 		.repo a {
 			&:hover {
-				background-color: #202020;
+				background-color: $grey-900;
 			}
 		}
 	}

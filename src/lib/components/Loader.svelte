@@ -1,7 +1,7 @@
 <div class="lds-heart"><div /></div>
 
 <style lang="scss">
-	@use '../style/palette.scss';
+	@import '../style/global.scss';
 
 	.lds-heart {
 		display: block;
@@ -19,7 +19,7 @@
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		background: palette.$primary-light;
+		background: $primary-700;
 		animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 	}
 
@@ -30,15 +30,7 @@
 		display: block;
 		width: 32px;
 		height: 32px;
-		background: palette.$primary-light;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		.lds-heart div,
-		.lds-heart div::after,
-		.lds-heart div::before {
-			background: palette.$primary-dark;
-		}
+		background: $primary-700;
 	}
 
 	.lds-heart div:before {

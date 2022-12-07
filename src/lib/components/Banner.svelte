@@ -3,11 +3,11 @@
 </div>
 
 <style type="scss">
-	@use '../style/palette.scss';
+	@import '../style/global.scss';
 
 	.header {
 		position: relative;
-		background-color: palette.$primary-light;
+		background-color: $primary-700;
 		border-radius: 0.25rem;
 		border-end-end-radius: 0;
 		border-end-start-radius: 0;
@@ -38,10 +38,6 @@
 	}
 
 	@media (prefers-color-scheme: dark) {
-		.header {
-			background-color: palette.$primary-dark;
-		}
-
 		.header::before {
 			filter: invert(100%);
 		}

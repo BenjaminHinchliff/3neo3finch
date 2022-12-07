@@ -37,7 +37,7 @@
 
 <noscript>
 	<!-- for now just hide the load more button if javascript isn't enabled -->
-	<style lang="scss">
+	<style>
 		.jsonly {
 			display: none;
 		}
@@ -46,27 +46,10 @@
 
 <style lang="scss">
 	.more-button {
-		background-color: #d0d0d0;
-		color: #565656;
-		width: 95%;
-		height: 3.5rem;
-		margin: 0.5rem auto;
-		display: block;
-		border-width: 0;
-		border-radius: 0.5rem;
-		font-size: 1.2rem;
-		font-weight: normal;
-		cursor: pointer;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		.more-button {
-			background-color: #292929;
-			color: #666666;
-		}
-	}
-
-	.end-marker {
-		text-align: center;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		margin-bottom: 0;
 	}
 </style>
