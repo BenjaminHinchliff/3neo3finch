@@ -14,7 +14,7 @@
 
 <nav>
 	{#each links as { href, text }}
-		<a class="{$page.url.pathname === href ? 'active' : ''} button" {href}>{text}</a>
+		<a class={$page.url.pathname === href ? 'active' : ''} {href}>{text}</a>
 	{/each}
 </nav>
 
