@@ -52,4 +52,8 @@
 		margin-top: 1rem;
 		margin-bottom: 0;
 	}
+
+	.end-marker {
+		text-align: center;
+	}
 </style>
