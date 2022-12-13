@@ -8,7 +8,8 @@
 
 	const links: Link[] = [
 		{ href: '/', text: 'About' },
-		{ href: '/projects', text: 'Projects' }
+		{ href: '/projects', text: 'Projects' },
+		{ href: '/Resume_CV.pdf', text: 'CV' }
 	];
 </script>
 
