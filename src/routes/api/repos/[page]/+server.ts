@@ -16,7 +16,7 @@ export const GET: RequestHandler = async ({ params: { page } }) => {
 	const res = await octokit.rest.repos
 		.listForUser({
 			username: username ?? 'BenjaminHinchliff',
-			sort: 'pushed',
+			sort: 'created',
 			per_page: 20,
 			page: page_num
 		})
