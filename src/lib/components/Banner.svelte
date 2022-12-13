@@ -8,7 +8,6 @@
 	.header {
 		position: relative;
 		background-color: $primary-700;
-		border-radius: 0.25rem;
 		z-index: -1000;
 	}
 
