@@ -1,6 +1,6 @@
-<div class="content">
+<main class="container">
 	<slot />
-</div>
+</main>
 
 <style lang="scss">
 	.content {

@@ -11,10 +11,8 @@
 	<title>{title} - Benjamin Hinchliff</title>
 </svelte:head>
 
-<main class="container">
-	<Banner />
-	<Navbar />
-	<Content>
-		<slot />
-	</Content>
-</main>
+<Banner />
+<Navbar />
+<Content>
+	<slot />
+</Content>
