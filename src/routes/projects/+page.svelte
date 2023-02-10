@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import RepoList from '$lib/components/RepoList.svelte';
-	import Layout from '$lib/components/Layout.svelte';
 
 	let pages = {
 		num: 1,
@@ -21,6 +20,8 @@
 	export let data: PageData;
 </script>
 
-<Layout title="Projects">
-	<RepoList repos={data.repos} has_more={pages.has_next} on:loadmore={load_more} />
-</Layout>
+<svelte:head>
+	<title>Projects - Benjamin Hinchliff</title>
+</svelte:head>
+
+<RepoList repos={data.repos} has_more={pages.has_next} on:loadmore={load_more} />

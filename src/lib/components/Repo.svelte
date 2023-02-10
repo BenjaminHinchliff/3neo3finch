@@ -12,10 +12,8 @@
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
-
 	.repo {
-		border-bottom: 1px solid $grey-600;
+		border-bottom: 1px solid $light-contrast;
 		padding: 0.3rem 0.1rem;
 	}
 
@@ -23,21 +21,22 @@
 		display: block;
 		max-width: 100%;
 		text-decoration: none;
-		color: black;
+		color: $light-text;
 		margin: 0.1rem 0;
 		padding: 1.5rem;
 		border-radius: 0.5rem;
 
 		&:hover {
-			background-color: $grey-50;
+			background-color: $light-secondary;
 			transition: background-color 0.25s ease 0s;
 		}
 	}
 
 	@media only screen and (prefers-color-scheme: dark) {
 		.repo a {
+			color: $dark-text;
 			&:hover {
-				background-color: $grey-900;
+				background-color: $dark-secondary;
 			}
 		}
 	}

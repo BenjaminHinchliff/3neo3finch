@@ -2,12 +2,11 @@
 	<h1 id="name">Benjamin Hinchliff</h1>
 </div>
 
-<style type="scss">
-	@import '../style/global.scss';
-
+<style lang="scss">
 	.header {
 		position: relative;
-		background-color: $primary-700;
+		background-color: $light-accent;
+		padding: 2.5%;
 		z-index: -1000;
 	}
 
@@ -26,15 +25,16 @@
 	}
 
 	#name {
-		font-size: 3.75rem;
+		font-size: 4.25rem;
 		font-weight: 300;
+		font-family: $fonts;
 		text-align: center;
 		padding-top: 5rem;
 		padding-bottom: 5rem;
 		margin: 0;
 	}
 
-	@media (prefers-color-scheme: dark) {
+	@media only screen and (prefers-color-scheme: dark) {
 		.header::before {
 			filter: invert(100%);
 		}

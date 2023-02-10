@@ -20,8 +20,6 @@
 </nav>
 
 <style lang="scss">
-	@import '../style/global.scss';
-
 	nav {
 		padding-top: 0.5rem;
 		display: flex;
@@ -30,11 +28,19 @@
 	}
 
 	nav a {
-		font-size: 1.25rem;
+		color: $light-accent;
+		font-family: $fonts;
+		font-size: 1.5rem;
 		text-decoration: underline;
 		display: inline-block;
+		padding: 0.5rem;
 		margin: auto 0.2rem;
+		border-radius: 0.5rem;
 		transition: color 0.15s ease-in-out 0s;
+
+		&:hover {
+			background-color: rgba($dark-accent, 0.25);
+		}
 
 		&.active {
 			text-decoration: none;

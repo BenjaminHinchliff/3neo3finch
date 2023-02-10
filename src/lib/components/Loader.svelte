@@ -1,8 +1,6 @@
 <div class="lds-heart"><div /></div>
 
 <style lang="scss">
-	@import '../style/global.scss';
-
 	.lds-heart {
 		display: block;
 		margin: auto;
@@ -19,7 +17,7 @@
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		background: $primary-700;
+		background: $light-accent;
 		animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 	}
 
@@ -30,7 +28,7 @@
 		display: block;
 		width: 32px;
 		height: 32px;
-		background: $primary-700;
+		background: $light-accent;
 	}
 
 	.lds-heart div:before {

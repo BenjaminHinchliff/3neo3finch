@@ -46,11 +46,22 @@
 
 <style lang="scss">
 	.more-button {
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 1rem;
-		margin-bottom: 0;
+		color: $light-text;
+		background-color: $light-accent;
+		font-size: 1.5em;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-width: 0;
+		display: block;
+		width: 65%;
+		min-width: map-get($viewports, 'sm');
+		margin: 1rem auto;
+	}
+
+	@media only screen and (prefers-color-scheme: dark) {
+		.more-button {
+			color: $dark-text;
+		}
 	}
 
 	.end-marker {

@@ -3,7 +3,38 @@
 </main>
 
 <style lang="scss">
-	.content {
-		padding: 1rem;
+	.container {
+		font-family: $fonts;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.container {
+		@if map-get($breakpoints, 'sm') {
+			@media (min-width: map-get($breakpoints, 'sm')) {
+				max-width: map-get($viewports, 'sm');
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+
+		@if map-get($breakpoints, 'md') {
+			@media (min-width: map-get($breakpoints, 'md')) {
+				max-width: map-get($viewports, 'md');
+			}
+		}
+
+		@if map-get($breakpoints, 'lg') {
+			@media (min-width: map-get($breakpoints, 'lg')) {
+				max-width: map-get($viewports, 'lg');
+			}
+		}
+
+		@if map-get($breakpoints, 'xl') {
+			@media (min-width: map-get($breakpoints, 'xl')) {
+				max-width: map-get($viewports, 'xl');
+			}
+		}
 	}
 </style>

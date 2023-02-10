@@ -1,0 +1,31 @@
+// Orange Theme Variables
+$light-text: #000000;
+$light-accent: #f57c00;
+$light-primary: #ffffff;
+$light-secondary: #edf0f3;
+$light-contrast: #596b78;
+
+$dark-text: #ffffff;
+$dark-accent: #f57c00;
+$dark-primary: #11191f;
+$dark-secondary: #1b2832;
+$dark-contrast: #596b78;
+
+$fonts: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
+	sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+// Viewports
+$viewports: (
+	sm: 510px,
+	md: 700px,
+	lg: 920px,
+	xl: 1130px
+) !default;
