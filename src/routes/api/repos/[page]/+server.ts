@@ -5,7 +5,7 @@ import type { RequestHandler } from './$types';
 
 const octokit = new Octokit({ auth: GITHUB_PAT });
 
-const username = await octokit.rest.users.getAuthenticated().then(({ data }) => data.name);
+const username = await octokit.rest.users.getAuthenticated().then(({ data }) => data.login);
 
 export const GET: RequestHandler = async ({ params: { page } }) => {
 	const page_num = parseInt(page);
@@ -20,7 +20,8 @@ export const GET: RequestHandler = async ({ params: { page } }) => {
 			per_page: 20,
 			page: page_num
 		})
-		.catch(() => {
+		.catch((err) => {
+			console.error(err);
 			throw error(500, 'internal server error');
 		});
 	if (res.status !== 200) {
